@@ -1,36 +1,41 @@
 /*--Remember the cascade: Later styles override earlier ones and more specific styles override more general ones.--*/
 body {
-  color: #444;
+  color: #99CED4;
   font-size: 16px;
   font-family: 'Gentium Book Basic', serif;
+  background-color: #6E7376
 }
 p {
   margin-bottom: .67em;
 }
+.dropcap {
+  font-size: 40px;
+}
 nav, footer {
-  background-color: #444;
+  background-color: #99CED4;
 }
 footer {
   text-align: center;
   padding: 1em 0 .3em 0;
-  color: #D0D0D0;
-  
+  color: #6E7376;
 }
 /*-- Main Menu Styles--*/
 nav ul {
   list-style: none;
   padding: 1em;
+  display: flex;
+  justify-content: space-between;
 }
 nav a:link, nav a:visited {
-  color: #D0D0D0;
+  color: #6E7376;
   text-decoration: none;
 }
 nav a:hover, nav a:active  {
-  color: #F0F0F0;
+  color: #4ABDAC;
   text-decoration: underline;
 }
 nav a.active {
-  color: #F0F0F0;
+  color: #6E7376;
 }
 /*-- Hero Unit Styles--*/
 header {
@@ -47,11 +52,17 @@ header img {
 header h1 {
   margin: 0 auto;
   padding: 0 auto;
-  font-weight: 900;
-  font-family: 'Lato', serif;
+  display: flex;
+  justify-content: center;
 }
 .small {
   margin-top: 1em;
+  font-size: 25px;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  font-family: 'Lato', sans-serif;
+  font-variant-caps: small-caps;
 }
 /*-- Article Styles--*/
 article {
@@ -64,19 +75,27 @@ article {
 article figure {
   width: 39%;
   margin: 0 0 1.25em 1.25em;
+  float: right;
 }
 article figcaption {
+  font-size: 14px;
+  font-weight: 200px;
+  font-family: 'Arial'
 }
 .pagination {
   margin-top: 2em;
   margin-bottom: 2em;
   width: 96%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
 }
 a.button {
-  border: 1px solid #888;
+  border: 1px solid #465C8B;
   padding: .4em 1em .4em 1em;
   text-decoration: none;
-  color: #888;
+  color: #DFDCE3;
   border-radius: 200px;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
