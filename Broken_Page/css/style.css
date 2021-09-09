@@ -10,6 +10,9 @@ p {
 }
 .dropcap {
   font-size: 40px;
+  line-height: .8;
+  float: left;
+  letter-spacing: 0;
 }
 nav, footer {
   background-color: #99CED4;
